@@ -1,0 +1,116 @@
+.new-place-form
+    > div, .MuiButton-root
+        margin-top: 24px
+
+.double-input-form
+    > div
+        &:first-child
+            margin-right: 10px
+.place-availability
+    display: flex
+    justify-content: space-between
+    margin-bottom: 20px
+    margin-top: 8px !important
+    button
+        text-transform: uppercase
+        &.active
+            border-color: #1E1E70
+            color: #1E1E70
+
+.location-icon
+    width: 16px
+    height: 16px
+
+.preview-image
+    border-radius: 12px
+    width: 100%
+    height: 100%
+    max-height: 233px
+    object-fit: cover
+
+.city-label
+    border-radius: 2px,
+    border-width: 0.5px,
+    background-color: #1E1E70,
+    margin-right: 8px,
+    padding: 1.5px 4px
+
+.info-text
+    font-size: 12px
+
+.info-title
+    text-transform: uppercase
+    font-size: 16px
+
+.tag
+    padding: 2px 4px
+    border: 1px solid #1E1E70
+    border-radius: 2px
+    max-height: 20px
+    margin-bottom: 8px
+    margin-right: 8px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-transform: uppercase
+
+.preview-image-multiple-wrapper
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-start
+    overflow-y: scroll
+
+.preview-image-multiple
+    max-width: 100%
+    position: relative
+    margin-right: 20px
+    height: 200px
+    display: flex
+    justify-content: center
+    margin-bottom: 0
+    &__close-button
+        width: 28px
+        height: 28px
+        border-radius: 100px
+        display: flex
+        align-items: center
+        justify-content: center
+        transition: all .3s ease-in
+        position: absolute
+        right: -11px
+        top: 5px
+        opacity: 0
+    &:hover
+        .preview-image-multiple__image
+            transform: translateY(-4px)
+            box-shadow: 0 14px 39px -11px rgba(0, 0, 0, 0.4)
+            border-color: #1e1e70b5
+            cursor: pointer
+
+        .preview-image-multiple__close-button
+            background-color: #dededeba
+            opacity: 1
+            cursor: pointer
+            &:hover
+                transform: rotate(180deg)
+
+    &__image
+        border-radius: 14px
+        height: 160px
+        transition: all .3s ease-in
+        border: 4px solid transparent
+        > img
+            height: 100%
+            border-radius: 8px
+
+    &__close-button-icon
+        width: 18px
+        height: 18px
+
+.selected-image
+    border-color: #1e1e70b5
+    box-sizing: border-box
+
+*p
+    margin: 0
